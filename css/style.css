@@ -1,0 +1,162 @@
+* {
+  margin: 0; /*  * Применение ко всем элементам , внутренние и внешние отступы */
+  padding: 0;
+}
+/* Все написанные коментарии ещё с обучения , для запоминания информации. В коде готового сйта коментарии используются для навигации и понимания кода.
+/* медиа параметры CSS не прописывал голова занята другим
+
+/* First section*/
+
+html {
+  background-image: url(../img/backimage.jpg); /*  Фоновая картинка */
+}
+
+.siteblock {
+  width: 80%; /* Ширина */
+  margin-left: auto; /* Отступ слева "авто" выравнивает по центру */
+  margin-right: auto; /* Отступ справа"авто" выравнивает по центру  */
+}
+
+.header {
+  height: 220px; /* Высота */
+  text-align: center; /* Выравнивание элементов по центру */
+  background: url(../img/logo2.png) no-repeat 17% 5%; /*  Логотип размёщённый как фон без повторений 12%-отступ слева 50% размер фото от DIV */
+  background-size: contain;
+  position: relative;
+  background-color: rgb(164, 165, 167, 0.1); /* Фоновый цвет  "0.1" прозрачность , отдельно задаётся обьявлением - oppacity */
+  border: solid 1px #ffffff; /* Рамка и её закругления*/
+  border-radius: 10px;
+}
+
+.header.red {
+  background-color: rgb(163, 224, 102, 0.3);
+}
+
+.logo {
+  text-align: center; /* Выравнивание по центру текста */
+  margin: 12px 0 40px 0; /* Отступ сверху */
+  font-family: "Caveat", cursive, sans-serif;
+  font-size: 45px;
+}
+
+.menubar {
+  text-align: center;
+  margin-top: 25px;
+  margin-left: 30px;
+}
+
+ul,
+li {
+  display: inline; /* Делает список в строку*/
+}
+
+li {
+  background-color: rgb(188, 192, 188);
+  background: linear-gradient(180deg, #87868a, #d3d0d0); /* Градиент цвета "градусы ищменения и цвет-цвет"*/
+  border-radius: 20px;
+  padding: 10px 10px 10px 10px;
+  margin-right: 23px;
+}
+
+a {
+  text-decoration: none; /* Убирает подчёркивания ссылок*/
+  color: black;
+  text-transform: uppercase;
+}
+
+a:hover {
+  color: rgb(90, 135, 172);
+}
+
+/*Second section*/
+
+.logo-text {
+  text-align: center; /* Выравнивание по центру текста */
+  margin: 35px 0 0px 0; /* Отступ сверху */
+  font: 35px "Caveat", cursive, sans-serif;
+}
+
+#about {
+  height: 650px;
+  background-color: rgba(212, 213, 216, 0.1);
+  border: solid 1px #ffffff; /* Рамка и её закругления*/
+  border-radius: 10px;
+}
+
+.about-about {
+  margin: 33px 0 10% 0;
+  text-align: center;
+  height: 350px;
+}
+
+.img {
+  height: 190px;
+  width: 190px;
+  border-radius: 100%;
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.19), 0 6px 6px rgba(0, 0, 0, 0.23);
+}
+
+.photo::after {
+  content: "";
+  display: block;
+  height: 4px;
+  width: 230px;
+  background-color: rgb(155, 150, 150);
+  margin: 20px auto 20px auto;
+  border-radius: 50px;
+}
+
+.about-us {
+  width: 30%;
+  height: 320px;
+  float: left;
+  display: inline;
+  margin-left: 3%;
+}
+
+.text {
+  height: 170px;
+  font-size: large;
+  font-weight: 500;
+  font-style: italic;
+  line-height: 23px;
+}
+
+button {
+  height: 30px;
+  width: 110px;
+}
+
+/*Third section*/
+
+#third {
+  height: 650px;
+  background-color: rgba(212, 213, 216, 0.1);
+  border: solid 1px #ffffff; /* Рамка и её закругления*/
+  border-radius: 10px;
+}
+
+.brow {
+  margin: 40px 12% 10px 12%;
+}
+
+.imgthird {
+  float: left;
+  height: 240px;
+  width: 270px;
+  border: solid 2px #87868a;
+  border-radius: 12px;
+  margin-right: 2%;
+  margin-left: -34px;
+  margin-top: -12px;
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.19), 0 6px 6px rgba(0, 0, 0, 0.23);
+}
+
+.thirdtxt {
+  padding: 9px 9px 9px 9px;
+  line-height: 23px;
+  text-align: justify;
+  border-radius: 12px;
+  background-color: #e2e1e1;
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.19), 0 6px 6px rgba(0, 0, 0, 0.23);
+}
